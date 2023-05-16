@@ -1,0 +1,167 @@
+
+.menu-icon{
+  margin-right: 10px;
+}
+.title{
+  margin-right: 10px;
+  font-size: 40px; /* Adjust the font size as needed */
+  transform: skewX(-15deg);
+
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  gap:3px;
+  
+}
+.search-field {
+  width: 310%; /* Adjust as needed */
+}
+
+.language-field .en {
+  font-size: 6px; /* Adjust the font size as needed */
+}
+
+.language-field .sp {
+  font-size: 6px; /* Adjust the font size as needed */
+}
+
+.language-field {
+  width: 250px; /* Adjust as needed */
+  height: 30px;
+}
+
+.sign-in {
+  width: 155px; /* Adjust as needed */
+
+}
+.pop{
+  text-align: center;
+    border-radius: 10px;
+    background-color: #fddb3a;
+    color: black;
+    font-size: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width:140px;
+}
+.pop-overdiv{
+  padding: 20px;
+}
+
+.cart-field {
+  width: 92px; /* Adjust as needed */
+}
+
+.returnsorders{
+  width:15px;
+}
+
+
+
+.border-hover:hover .MuiOutlinedInput-notchedOutline {
+  border-color: blue  !important;
+}
+.new-customer{
+  font-size: 9px;
+}
+.new-customer a {
+  color: blue;
+  /* Add other styles as needed */
+}
+
+.popover-signin{
+  color: black;
+  background-color: yellow;
+}
+
+.vertical-line {
+  border-left: 1px solid black;
+  height: 100px;
+}
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.flexx{
+  display:flex;
+  gap: 50px;
+    flex-direction: column;
+}
+
+
+
+.hr{
+  width:500px;
+}
+
+.vertical-line{
+  width:100px;
+}
+
+
+.container3 * {
+  font-size: .97rem; /* Increase the font size by 2 for all elements */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #003366;
+  height: 30px;
+  width: 100%;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.track{
+  color: white;
+  text-decoration: none;
+  margin-left: 1100px;
+}
+
+
+.navbar2 {
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  background-color: lightblue;
+  padding: 5px 10px;
+}
+
+.locationdiv {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: none;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.locationdiv a {
+  text-decoration: none;
+
+}
+
+.hello {
+  margin-left: 32px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.locationdiv a svg {
+  
+}
+.flex{
+  display: flex;
+}
