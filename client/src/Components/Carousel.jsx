@@ -13,8 +13,8 @@ const scrollRight = () => {
 
 
   return (
-    <div className="relative ">
-      <div className="absolute right-0 top-5 z-50">
+    <div className="relative">
+      <div className="absolute right-0 top-15 transform -translate-y-2 z-50">
         <button onClick={scrollLeft} className="p-4 m-2 bg-white rounded-lg">
           <FiChevronLeft />
         </button>
@@ -22,6 +22,7 @@ const scrollRight = () => {
           <FiChevronRight />
         </button>
       </div>
+      <br/>
       <div id="content" className="carousel p-4 
       flex items-center
        justify-start overflow-x-auto
