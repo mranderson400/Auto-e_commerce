@@ -24,7 +24,6 @@ const AdvancedSearch = () => {
     );
     setIsPopoverOpen(true);
   };
-
   const handleClose = (id, event) => {
     // Check if the event is available and has a target
     // and  the "if (event?.target)" you ensure that the code won't throw an error when accessing event.target.textContent

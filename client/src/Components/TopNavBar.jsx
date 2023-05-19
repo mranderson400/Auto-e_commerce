@@ -9,24 +9,29 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useState } from "react";
 import Popover from "@mui/material/Popover";
 import Button from "@mui/material/Button";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 
-const NavBar = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
 
-  const handlePopoverOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
-  const handlePopoverClose = () => {
-    setAnchorEl(null);
-  };
 
-  const open = Boolean(anchorEl);
-  const className = open ? "language-popover" : undefined;
+const TopNavBar = () => {
+
+    const [anchorEl, setAnchorEl] = useState(null);
+
+    const handlePopoverOpen = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+  
+    const handlePopoverClose = () => {
+      setAnchorEl(null);
+    };
+  
+    const open = Boolean(anchorEl);
+    const className = open ? "language-popover" : undefined;
+  
+
 
   return (
-    <>
+    <div>
       <div className="navbar">
         <a className="track" href="#">
           Track order
@@ -136,47 +141,8 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-
-      {/* Botton NavBar */}
-      <div className="container">
-        <div className="locationdiv">
-          <a href="#">
-            <span className="hello">Hello</span> <br /> <LocationOnIcon />{" "}
-            Select you're address
-          </a>
-        </div>
-        <div className="container">
-          <a className="navbar2" href="#">
-            All Parts
-          </a>
-          <a className="navbar2" href="#">
-            Breaks
-          </a>
-
-          <a className="navbar2" href="#">
-            Engine & Drivetrain
-          </a>
-          <a className="navbar2" href="#">
-            Suspension
-          </a>
-          <a className="navbar2" href="#">
-            Exhaust
-          </a>
-          <a className="navbar2" href="#">
-            Wheels & Tires
-          </a>
-          <a className="navbar2" href="#">
-            Interior
-          </a>
-          <a className="navbar2" href="#">
-            Exterior
-          </a>
-          <a className="navbar2" href="#">
-            Lights
-          </a>
-        </div>
-      </div>
-    </>
+    </div>
   );
 };
-export default NavBar;
+
+export default TopNavBar;
