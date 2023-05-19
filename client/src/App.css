@@ -165,3 +165,83 @@
 .flex{
   display: flex;
 }
+
+
+
+
+/*this is advanced*/ 
+
+.advanced-input {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  width: 85%;
+  height: 80px;
+  margin: auto;
+  justify-content: flex-start; /* Add this to position items at the start */
+  background-color: #005599
+}
+
+/* advanced-search.css */
+
+.advanced-search-popover {
+  width: 200px; /* Adjust the width to make the popover larger */
+  max-height: 900px; /* Adjust the maxHeight to allow more content to be visible */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity to control the dimming effect */
+  z-index: 999; /* Ensure the overlay appears above other elements */
+}
+
+.input-image {
+  height: 100%;
+  border-radius: 100px;
+
+}
+.input-text{
+  margin-left: 10px;
+  margin-right: 25px;
+  color: white;
+}
+.pop-overs {
+  display:flex;
+  margin-right: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  width:164px;
+  height: 68px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.year{
+  font-size: 13px
+}
+.go-button {
+  position: absolute;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: blue;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width:140px;
+  
+}
+
+.menu{
+  width: min(100px, 100px);
+}
+
+/*end of advanced */

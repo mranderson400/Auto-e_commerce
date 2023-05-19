@@ -121,8 +121,8 @@ const NavBar = () => {
                   <div className="vertical-line"></div>
                   <div className="container2">
                     <h3>Your Account</h3>
-                    <a href="#">Account</a>
-                    <a href="#">Orders</a>
+                    <a href="/account">Account</a>
+                    <a href="track-order">Orders</a>
                     <a href="#">Watch List</a>
                     <a href="#">Address</a>
                     <a href="#">Browsing History</a>
