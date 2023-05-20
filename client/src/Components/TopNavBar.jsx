@@ -10,34 +10,21 @@ import { useState } from "react";
 import Popover from "@mui/material/Popover";
 import Button from "@mui/material/Button";
 
-
-
-
 const TopNavBar = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
 
-    const [anchorEl, setAnchorEl] = useState(null);
+  const handlePopoverOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
-    const handlePopoverOpen = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-  
-    const handlePopoverClose = () => {
-      setAnchorEl(null);
-    };
-  
-    const open = Boolean(anchorEl);
-    const className = open ? "language-popover" : undefined;
-  
+  const handlePopoverClose = () => {
+    setAnchorEl(null);
+  };
 
-
+  const open = Boolean(anchorEl);
+  const className = open ? "language-popover" : undefined;
   return (
     <div>
-      <div className="navbar">
-        <a className="track" href="#">
-          Track order
-        </a>
-      </div>
-
       <div className="flex">
         <div className="container">
           <MenuIcon className="menu-icon" />

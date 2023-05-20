@@ -7,17 +7,27 @@ const BottomNavBar = () => {
       <div className="locationdiv">
         <a href="#">
           <span className="hello">Hello</span> <br /> <LocationOnIcon /> Select
-          you're address
+          your address
         </a>
       </div>
-      <div className="container">
+      <div className="navbarContainer">
+        <div className="flexContainer">
+          <div className="hamburger">
+            {/* Hamburger component */}
+          </div>
+          <div className="carparts">
+            {/* Carparts component */}
+          </div>
+          <div className="searchbar">
+            {/* Search bar component */}
+          </div>
+        </div>
         <a className="navbar2" href="#">
           All Parts
         </a>
         <a className="navbar2" href="#">
           Breaks
         </a>
-
         <a className="navbar2" href="#">
           Engine & Drivetrain
         </a>

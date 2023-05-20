@@ -1,4 +1,5 @@
 import React from 'react'
+import TrackOrder from '../Components/TrackOrder'
 import TopNavBar from '../Components/TopNavBar'
 import BottomNavBar from '../Components/BottomNavBar'
 
@@ -13,9 +14,10 @@ import { useState } from "react";
 import Popover from "@mui/material/Popover";
 import Button from "@mui/material/Button";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import TrackOrder from '../Components/TrackOrder';
 
 const NavBar = () => {
-    const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -30,12 +32,15 @@ const NavBar = () => {
 
   return (
     <div>
-        <div>
-            <TopNavBar/>
-        </div>
-        <div>
-            <BottomNavBar/>
-        </div>
+      <div>
+        <TrackOrder />
+      </div>
+      <div>
+        <TopNavBar />
+      </div>
+      <div>
+        <BottomNavBar />
+      </div>
     </div>
   )
 }
