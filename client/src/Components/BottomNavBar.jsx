@@ -1,10 +1,11 @@
 import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import {locationStyle, container, navbar2} from '../styles'
 
 const BottomNavBar = () => {
   return (
-    <div className="container">
-      <div className="locationdiv">
+    <div style={container}>
+      <div style={locationStyle}>
         <a href="#">
           <span className="hello">Hello</span> <br /> <LocationOnIcon /> Select
           your address
@@ -12,41 +13,41 @@ const BottomNavBar = () => {
       </div>
       <div className="navbarContainer">
         <div className="flexContainer">
-          <div className="hamburger">
-            {/* Hamburger component */}
+          <div >
+            Hamburger component
           </div>
-          <div className="carparts">
+          <div >
             {/* Carparts component */}
           </div>
           <div className="searchbar">
             {/* Search bar component */}
           </div>
         </div>
-        <a className="navbar2" href="#">
+        <a style={container} href="#">
           All Parts
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Breaks
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Engine & Drivetrain
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Suspension
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Exhaust
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Wheels & Tires
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Interior
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Exterior
         </a>
-        <a className="navbar2" href="#">
+        <a style={navbar2} href="#">
           Lights
         </a>
       </div>
