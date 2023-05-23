@@ -1,10 +1,9 @@
 import React from "react";
-import NavBar from "./NavBar";
-import AdvancedSearch from "./AdvancedSearch";
-import Carousel from "./Carousel";
 import TrackOrder from "./TrackOrder";
 import TopNavBar from "../Components/TopNavBar";
 import BottomNavBar from "../Components/BottomNavBar";
+import Carousel from "./Carousel";
+import AdvancedSearch from "./AdvancedSearch";
 
 const Welcome = () => {
   return (

@@ -3,6 +3,7 @@ import { ArrowDropDown } from "@mui/icons-material";
 import Popover from "@mui/material/Popover";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import { advancedInput, advancedSearchPopover, goButton, inputImg, popOvers, year } from "../styles/AdvancedStyles";
 
 
 const AdvancedSearch = () => {
@@ -46,21 +47,21 @@ const AdvancedSearch = () => {
   };
 
   return (
-    <div className="advanced-input">
+    <div style={advancedInput}>
       <img
         src="https://cdn.dribbble.com/userupload/3261442/file/original-79302dac2eb04d0f9aecac39e67b596b.png?resize=400x0"
         alt="Description"
-        className="input-image"
+        style={inputImg}
       />
       <span className="input-text">Select your Vehicle</span>
       {isPopoverOpen && <div className="overlay" />}
       {options.map((option) => (
         <div
-          className="pop-overs"
+          style={popOvers}
           key={option.id}
           onClick={(event) => handleClick(option.id, event)}
         >
-          <p className="year">{option.value}</p>
+          <p style={year}>{option.value}</p>
           <ArrowDropDown />
           <Popover
             open={Boolean(option.anchorEl)}
@@ -76,7 +77,7 @@ const AdvancedSearch = () => {
               vertical: "bottom",
               horizontal: "center",
             }}
-            classes={{ paper: "advanced-search-popover" }} // Apply the CSS class to the popover to change size
+            style={{ paper: advancedSearchPopover }} // Apply the CSS class to the popover to change size
 
           >
             {option.label === "Year" ? (
@@ -213,7 +214,7 @@ const AdvancedSearch = () => {
           </Popover>
         </div>
       ))}
-      <Link to="/some-path" className="go-button">
+      <Link to="/some-path" style={goButton}>
         
         <button>GO</button>
       </Link>

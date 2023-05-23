@@ -3,6 +3,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import {locationStyle, container, navbar2} from '../styles/BottomNavStyles';
 
 const BottomNavBar = () => {
+  
   return (
     <div style={container}>
       <div style={locationStyle}>
@@ -13,15 +14,7 @@ const BottomNavBar = () => {
       </div>
       <div className="navbarContainer">
         <div className="flexContainer">
-          <div >
-            Hamburger component
-          </div>
-          <div >
-            {/* Carparts component */}
-          </div>
-          <div className="searchbar">
-            {/* Search bar component */}
-          </div>
+         
         </div>
         <a style={container} href="#">
           All Parts

@@ -9,6 +9,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useState } from "react";
 import Popover from "@mui/material/Popover";
 import Button from "@mui/material/Button";
+import { menuIcon, newcostumer, popoverDiv, popoverSignin, title, searchFieldStyles, flex, signin, flexx, navbar, track  } from "../styles/TopNavStyles";
 
 const TopNavBar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -25,13 +26,18 @@ const TopNavBar = () => {
   const className = open ? "language-popover" : undefined;
   return (
     <div>
+    <div style={navbar}>
+        <a style={track} href="#">
+          Track order
+        </a>
+      </div>
       <div className="flex">
         <div className="container">
-          <MenuIcon className="menu-icon" />
-          <h1 className="title">Carparts</h1>
+          <MenuIcon style={menuIcon} />
+          <h1 style={title}>Carparts</h1>
           <div className="text-field-container">
             <TextField
-              className="search-field"
+              style={searchFieldStyles}
               variant="outlined"
               placeholder="Search by Part Name, Part Number, Vehicle or Brand"
               InputProps={{
@@ -63,7 +69,7 @@ const TopNavBar = () => {
           />
         </div>
 
-        <div className="flex">
+        <div style={flex}>
           <div
             className="sign-in border-hover"
             onMouseEnter={handlePopoverOpen}
@@ -96,11 +102,11 @@ const TopNavBar = () => {
                 horizontal: "center",
               }}
             >
-              <div className="pop-overdiv">
-                <Button className="popover-signin">
-                  <span className="pop">Sign in</span>
+              <div style={popoverDiv}>
+                <Button style={popoverSignin}>
+                  <span style={signin}>Sign in</span>
                 </Button>
-                <p className="new-customer">
+                <p style={newcostumer}>
                   New Customer?
                   <span>
                     {" "}
@@ -110,7 +116,7 @@ const TopNavBar = () => {
                 <br />
                 <hr className="hr" />
                 <br />
-                <div className="flexx">
+                <div style={flexx}>
                   <a>Your List</a>
                   <a>Create a list</a>
                   <div className="vertical-line"></div>
