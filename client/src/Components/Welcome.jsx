@@ -8,13 +8,12 @@ import AdvancedSearch from "./AdvancedSearch";
 const Welcome = () => {
   return (
     <>
-      <TrackOrder />
       <TopNavBar />
       <BottomNavBar />
       <hr />
-      <h3 className="text-3xl py-2 font-medium">Robert Anderson</h3>
-      <div className="bg-gray-100 ">
-        <h1>Popular Items</h1>
+      <h3 className="text-3xl py-2 font-medium"  style={{ marginLeft: "25px"}}>Welcome back, Abrar</h3>
+      <div className="bg-gray-100" style={{ marginLeft: "25px" , marginRight: "25px" }}>
+        <h1 className="text-2xl">Popular Items</h1>
         <Carousel />
       </div>
       <br />
