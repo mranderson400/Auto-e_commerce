@@ -29,7 +29,7 @@ const BottomNavBar = () => {
           Suspension
         </a>
         <a style={navbar2} href="#">
-          Exhaust
+          Exhausts
         </a>
         <a style={navbar2} href="#">
           Wheels & Tires
